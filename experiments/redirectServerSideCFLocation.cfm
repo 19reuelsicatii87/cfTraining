@@ -15,10 +15,15 @@
 	
 	<body>
 		
+		
+		
+		<!---Once the page is requested, server returns the REDIRECT page hence this part will no longer rendered---> 
 		<h1>You will be redirected soon!</h1>
 		<p>
 			https://www.quackit.com/coldfusion/tutorial/coldfusion_redirect.cfm
 		</p>
+		
+		<cflocation url="https://www.quackit.com/coldfusion/tutorial/coldfusion_redirect.cfm" addToken="false" statusCode="302">
 	
 		<!-- Option 1: Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 

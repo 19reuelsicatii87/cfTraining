@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<meta http-equiv="refresh" content="7; url='https://www.quackit.com/coldfusion/tutorial/coldfusion_redirect.cfm'" />
+		<meta http-equiv="refresh" 
+		      content="7; url='https://www.quackit.com/coldfusion/tutorial/coldfusion_redirect.cfm'"/>
 		<title>
 			REDIRECT PAGE 01
 		</title>
@@ -14,11 +15,10 @@
 	</head>
 	
 	<body>
-		
-		<h1>You will be redirected soon!</h1>
-		<p>
-			https://www.quackit.com/coldfusion/tutorial/coldfusion_redirect.cfm
-		</p>
+	
+		<cfheader statuscode="301" statustext="Moved Permanently">
+		<cfheader name="Location" value="https://www.quackit.com/coldfusion/tutorial">
+		<cfabort>
 	
 		<!-- Option 1: Bootstrap Bundle with Popper -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
